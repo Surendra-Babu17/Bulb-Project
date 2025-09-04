@@ -57,22 +57,28 @@ body {
   }
 }
 
-/* ✅ Mobile view (max-width 600px) */
 @media (max-width: 600px) {
   .main-block {
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
-    word-spacing: 10px;
+    word-spacing: normal;
   }
 
   img {
     width: 150px;
+    margin-bottom: 20px;
+  }
+
+  /* 🔥 Make buttons side by side */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
 
   .btn {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+    flex: 1; /* buttons take equal space */
+    max-width: 120px;
   }
 }
